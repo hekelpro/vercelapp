@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="author" content="M. Riski Darmawan" />
+    <meta name="keywords" content="riski darmawan, landing page, merchant code, e-commerce riski" />
+    <title>Telur Gulung - Landing Pages by Riski Darmawan</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+    <link rel="icon" href="assets/image/logo.png" type="image/png" />
+    <link rel="stylesheet" href="assets/sweetalert/sweetalert2.min.css">
+    <script src="assets/sweetalert/sweetalert2.all.min.js"></script>
+    <script>
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'bottom-start',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+    </script>
+    <link rel="stylesheet" href="assets/aos/aos.css">
+  </head>
+  <body>
+    <!-- create navbar -->
+    <nav id="navigation-bar" class="navbar fixed-top navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/image/nav.png" class="rounded rounded-circle" width="50" height="50" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <i class="fas fa-align-justify"></i>
+        </button>
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" style="width: 15rem;">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="font-family: cursive; color: silver;">Telur Gulung</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hubungi">Hubungi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ikuti">Ikuti</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <section id="home">
+      <div class="container content">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 justify-content-between">
+          <div class="col text-center" data-aos="zoom-out" data-aos-delay="1500">
+            <img class="img-fluid-piring bcl" src="assets/image/foodpng/telur_piring.png" alt="" />
+          </div>
+          <div class="col mt-3">
+            <div class="cts">
+              <h4 class="ha4" data-aos="zoom-in">Selamat datang</h4>
+              <p class="desc" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Warung saya menyediakan makanan yaitu telur gulung, Kuliner ini sangat digemari dihampir semua kalangan terutama anak-anak. Selain karena rasanya yang enak, harganya yang relatif murah juga menjadi daya tarik bagi para penikmatnya.</p>
+              <a class="btn btn-outline-primary btn-sm btn-block text-uppercase" href="assets/image/flyer.png" target="_blank" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800" download="flyer-menu.png">Download flyer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <section id="menu" class="mb-5">
+     <div class="text-center title-web">
+       <h2>Menu Tersedia</h2>
+     </div>
+     <div class="container-fluid">
+       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 justify-content-center">
+         <div class="col col-lg-5 col-md-4 main-menu" data-aos="fade-up">
+           <div class="card">
+             <div class="card-header">
+               <div class="row">
+                 <div class="col-4">
+                   <img src="assets/image/food/menu_telur_bakso.jpeg" class="img-top" alt="tlur bakso gulung">
+                 </div>
+                 <div class="col">
+                   <div class="titl">
+                     <h5 class="font-weight-bold title">Bakso Telur Gulung</h5>
+                     <p>
+                       <i class="fa fa-star check"></i>
+                       <i class="fa fa-star check"></i>
+                       <i class="fa fa-star check"></i>
+                       <i class="fa fa-star check"></i>
+                       <i class="fa fa-star check"></i>
+                     </p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="card-body">
+               <p class="how">ini adalah menu yang paling diminati banyak orang, yaitu bakso yang ditusuk lidi lalu dilumuri dengan telur dan digoreng</p>
+             </div>
+           </div>
+         </div>
+         <div class="col main-menu col-lg-5 col-md-4" data-aos="fade-down">
+           <div class="card">
+             <div class="card-header">
+               <div class="row">
+                 <div class="col-4">
+                   <img src="assets/image/food/menu_telur_original.jpeg" class="img-top" alt="tlur bakso gulung">
+                 </div>
+                 <div class="col">
+                   <div class="titl">
+                     <h5 class="font-weight-bold title">Telur Gulung original</h5>
+                     <p>
+                       <i class="fa fa-star check"></i>
+                       <i class="fa fa-star check"></i>
+                       <i class="fa fa-star check"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                     </p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="card-body">
+               <p class="how">Menu ini kurang diminati banyak orang karena ini adalah olahan asli telur saja, tanpa ada campuran topping khas. hanya ada telur yang digulung dengan lidi</p>
+             </div>
+           </div>
+         </div>
+         <div class="col main-menu col-lg-5 col-md-4" data-aos="fade-up">
+           <div class="card">
+             <div class="card-header">
+               <div class="row">
+                 <div class="col-4">
+                   <img src="assets/image/food/menu_telur_sosis.jpeg" class="img-top" alt="tlur bakso gulung">
+                 </div>
+                 <div class="col">
+                   <div class="titl">
+                     <h5 class="font-weight-bold title">Sosis Telur Gulung</h5>
+                     <p>
+                       <i class="fa fa-star check"></i>
+                       <i class="fa fa-star check"></i>
+                       <i class="fa fa-star check"></i>
+                       <i class="fa fa-star check"></i>
+                       <i class="fa fa-star check"></i>
+                     </p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="card-body">
+               <p class="how">Menu ini juga tak kalah dengan bakso, hanya saja sosis yang ditusuk dengan lidi lalu dilumuri dengan gorengan telur. enak banget loh!!</p>
+             </div>
+           </div>
+         </div>
+         <div class="col main-menu col-lg-5 col-md-4" data-aos="fade-down">
+           <div class="card">
+             <div class="card-header">
+               <div class="row">
+                 <div class="col-4">
+                   <img src="assets/image/foodpng/teh.png" class="img-top" alt="tlur bakso gulung">
+                 </div>
+                 <div class="col">
+                   <div class="titl">
+                     <h5 class="font-weight-bold title">Teh manis dingin / hangat</h5>
+                     <p>
+                       <i class="fa fa-star check"></i>
+                       <i class="fa fa-star check"></i>
+                       <i class="fa fa-star check"></i>
+                       <i class="fa fa-star check"></i>
+                       <i class="fa fa-star check"></i>
+                     </p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="card-body">
+               <p class="how">Makan tanpa minum itu kurang asik! Maka dari itu kami juga menjual teh manis dingin/hangat. bagi pecinta teh dipersilahkan.</p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <section id="hubungi" class="mb-5">
+      <div class="text-center title-web">
+        <h2>Hubungi kami</h2>
+      </div>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 justify-content-around">
+          <div class="col col-lg-5 col-md-4" data-aos="flip-left">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1990.995200670364!2d98.6208899!3d3.5896761!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1677633199329!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col col-lg-5 col-md-4">
+            <div class="card-body">
+              <form onsubmit="return false">
+                <div class="form-group mb-4" data-aos="fade-down-left">
+                  <input type="text" placeholder="masukan nama" class="form-control rounded rounded-pill">
+                </div>
+                <div class="form-group mb-4" data-aos="fade-down-left">
+                  <input type="email" placeholder="masukan email" class="form-control rounded rounded-pill">
+                </div>
+                <div class="form-group mb-4 text-white" data-aos="fade-down-left">
+                  <textarea class="form-control" rows="3" placeholder="Masukan isi pesan anda"></textarea>
+                </div>
+                <div class="form-group mb-3">
+                  <button onclick="vvc()" class="btn btn-outline-info rounded rounded-pill">kirim pesan</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+   
+   <footer>
+    <div class="container-fluid">
+      <div class="text-center">
+        <img class="d-block mx-auto" src="assets/image/nav.png" alt="logo telur gulung" width="100" height="100">
+        <h3 style="font-family: cursive; color: silver;">Telur Gulung</h3>
+        <div class="mt-2 mb-4 w-lg-50 w-md-50 d-block mx-auto">
+          <span class="about">Logo yang kami buat terdapat gambar seorang chef memegang sebuah piring yang berisi telur gulung untuk memperlihatkan/menunjukkan kuliner yang sangat nikmat tersebut agar pembeli sangat ingin untuk mencobanya.</span>
+          <div class="mt-4 d-flex justify-content-around sosmed">
+            <a href="javascript:void(0)"><i class="fab fa-instagram ig"></i></a>
+            <a href="javascript:void(0)"><i class="fab fa-facebook-square fb"></i></a>
+            <a href="javascript:void(0)"><i class="fab fa-twitter-square tw"></i></a>
+            <a href="javascript:void(0)"><i class="fab fa-youtube yt"></i></a>
+            <a href="javascript:void(0)"><i class="fab fa-whatsapp wa"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </footer>
+
+   <div id="btnUP">
+    <i class="fas fa-chevron-up"></i>
+   </div>
+
+   <script src="assets/js/jquery.js"></script>
+   <script>
+    $('#btnUP').fadeOut();
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 20) {
+        $('#btnUP').fadeIn();
+      } else {
+        $('#btnUP').fadeOut();
+      }
+    });
+
+    $("#btnUP").click(function() {
+      $("html, body").animate({scrollTop: 0}, 800);
+    });
+  </script>
+   <script src="assets/aos/aos.js"></script>
+   <script>
+      AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+   </script>
+   <script>
+      var bar = document.getElementById("navigation-bar");
+      window.onscroll = () => {
+        punction();
+      }
+      function punction() {
+        if (document.body.scrollTop  > 20 || document.documentElement.scrollTop > 20) {
+          bar.classList.add("bg-bars");
+        } else {
+          bar.classList.remove("bg-bars");
+        }
+      }
+      function vvc() {
+        Toast.fire({
+          icon: 'success',
+          title: 'Pesan anda telah dikirim.'
+        })
+      }
+    </script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
